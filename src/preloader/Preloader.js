@@ -17,9 +17,7 @@ const Preloader = (props) => {
     lottie.setSpeed(0.9)
     setTimeout(() => {
         setVisible(false);
-      }, props.delay);
-    return () => lottie.destroy();
-        
+      }, props.delay);      
   }, [props.delay]);
   return  visible ? <div style={{ height: 140, width: 140 }} ref={anime}></div> : <Block />;
 };
